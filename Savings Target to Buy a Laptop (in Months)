@@ -1,0 +1,12 @@
+harga_laptop = float(input("Masukkan harga laptop (Rp): "))
+
+alokasi_tabungan_bulanan = float(input("Masukkan alokasi tabungan bulanan (Rp): "))
+
+
+import math
+
+bulan_dibutuhkan = math.ceil(harga_laptop / alokasi_tabungan_bulanan)
+
+
+print(f"\nBulan yang dibutuhkan untuk membeli laptop: {bulan_dibutuhkan} bulan")
+
