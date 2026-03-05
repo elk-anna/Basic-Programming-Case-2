@@ -1,0 +1,14 @@
+import math
+
+cakupan_per_kaleng = 10
+
+panjang = float(input("Masukkan panjang ruangan (dalam meter): "))
+lebar = float(input("Masukkan lebar ruangan (dalam meter): "))
+tinggi = float(input("Masukkan tinggi ruangan (dalam meter): "))
+
+luas_dinding = 2 * (panjang + lebar) * tinggi
+
+jumlah_kaleng = math.ceil(luas_dinding / cakupan_per_kaleng)
+
+print(f"Total luas dinding yang akan dicat: {luas_dinding} m\u00b2")
+print(f"Jumlah kaleng cat yang dibutuhkan: {jumlah_kaleng} kaleng")
