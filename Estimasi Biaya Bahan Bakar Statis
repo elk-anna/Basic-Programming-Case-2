@@ -1,0 +1,18 @@
+jarak_tempuh = 180 # dalam km
+
+konsumsi_per_liter = 40 # km per liter
+
+harga_per_liter = 13000 # dalam Rupiah
+
+
+bahan_bakar_dibutuhkan = jarak_tempuh / konsumsi_per_liter
+
+
+total_biaya = bahan_bakar_dibutuhkan * harga_per_liter
+
+
+print(f"Bahan bakar yang dibutuhkan: {bahan_bakar_dibutuhkan} liter")
+
+print(f"Total biaya bahan bakar: Rp {total_biaya:,.0f}")
+
+
