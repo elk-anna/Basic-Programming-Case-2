@@ -1,0 +1,10 @@
+total_tagihan = float(input("Masukkan total tagihan (Rp): "))
+jumlah_orang = int(input("Masukkan jumlah orang yang makan: "))
+pajak_persen = 10
+
+total_setelah_pajak = total_tagihan * (1 + pajak_persen / 100)
+
+bayar_per_orang = total_setelah_pajak / jumlah_orang
+
+print(f"\nTotal setelah pajak: Rp {total_setelah_pajak:,.2f}")
+print(f"Jumlah yang harus dibayar per orang: Rp {bayar_per_orang:,.2f}")
