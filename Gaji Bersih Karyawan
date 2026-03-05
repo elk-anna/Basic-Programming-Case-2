@@ -1,0 +1,19 @@
+gaji_pokok = 5000000
+tunjangan = 750000
+persentase_bpjs = 0.02
+persentase_pajak = 0.05
+
+
+total_pendapatan = gaji_pokok + tunjangan
+
+potongan_bpjs = total_pendapatan * persentase_bpjs
+potongan_pajak = total_pendapatan * persentase_pajak
+total_potongan = potongan_bpjs + potongan_pajak
+
+gaji_bersih = total_pendapatan - total_potongan
+
+print(f"Total Pendapatan: Rp {total_pendapatan:,.0f}")
+print(f"Potongan BPJS (2%): Rp {potongan_bpjs:,.0f}")
+print(f"Potongan Pajak (5%): Rp {potongan_pajak:,.0f}")
+print(f"Total Potongan: Rp {total_potongan:,.0f}")
+print(f"Gaji Bersih Diterima: Rp {gaji_bersih:,.0f}")
