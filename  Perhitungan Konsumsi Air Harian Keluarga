@@ -1,0 +1,22 @@
+def hitung_konsumsi_air(jumlah_orang):
+    kebutuhan_per_orang_harian = 2.5 # liter
+    kapasitas_galon = 19 # liter
+    harga_galon = 19000 # Rupiah
+
+    total_air_mingguan = jumlah_orang * kebutuhan_per_orang_harian * 7
+
+    import math
+    galon_dibutuhkan = math.ceil(total_air_mingguan / kapasitas_galon)
+    
+    total_anggaran = galon_dibutuhkan * harga_galon
+    
+    return total_air_mingguan, galon_dibutuhkan, total_anggaran
+
+jumlah_orang_di_rumah = 5 
+
+air_mingguan, galon_total, anggaran_total = hitung_konsumsi_air(jumlah_orang_di_rumah)
+
+print(f"Untuk {jumlah_orang_di_rumah} orang:")
+print(f"Total kebutuhan air mingguan: {air_mingguan} liter")
+print(f"Jumlah galon yang harus dibeli: {galon_total} galon")
+print(f"Total anggaran dibutuhkan: Rp {anggaran_total:,.2f}")
