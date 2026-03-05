@@ -1,0 +1,10 @@
+rate_per_jam = float(input("Masukkan tarif per jam (Rp): "))
+jam_kerja = float(input("Masukkan total jam kerja: "))
+menit_kerja = float(input("Masukkan total menit kerja: "))
+
+jam_desimal = jam_kerja + (menit_kerja / 60)
+
+total_pembayaran = rate_per_jam * jam_desimal
+
+print(f"\nTotal jam kerja dalam desimal: {jam_desimal:.2f} jam")
+print(f"Total pembayaran: Rp {total_pembayaran:,.2f}")
