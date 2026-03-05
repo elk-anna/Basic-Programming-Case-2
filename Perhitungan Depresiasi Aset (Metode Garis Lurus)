@@ -1,0 +1,18 @@
+def hitung_depresiasi(nilai_awal, nilai_sisa, umur_ekonomis, tahun_ke):
+    penyusutan_tahunan = (nilai_awal - nilai_sisa) / umur_ekonomis
+    
+    nilai_setelah_tahun_ke = nilai_awal - (penyusutan_tahunan * tahun_ke)
+    
+    return penyusutan_tahunan, nilai_setelah_tahun_ke
+
+nilai_awal_laptop = 12000000
+nilai_sisa_laptop = 2000000
+umur_ekonomis_laptop = 4 # tahun
+tahun_hitung = 2 # tahun
+
+penyusutan_tahunan, nilai_setelah_2_tahun = hitung_depresiasi(
+    nilai_awal_laptop, nilai_sisa_laptop, umur_ekonomis_laptop, tahun_hitung
+)
+
+print(f"Penyusutan tahunan: Rp {penyusutan_tahunan:,.2f}")
+print(f"Nilai laptop setelah {tahun_hitung} tahun: Rp {nilai_setelah_2_tahun:,.2f}")
